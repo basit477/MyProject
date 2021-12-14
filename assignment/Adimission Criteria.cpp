@@ -3,14 +3,20 @@ using namespace std;
 int main()
 {
     double mathMarks, phyMarks, chemMarks, total, mathPhyTotal;
+    
     cout << "Enter your marks in Math: ";
     cin >> mathMarks;
+    
     cout << "Enter your marks in Physics: ";
     cin >> phyMarks;
+    
     cout << "Enter your marks in Chemistry: ";
     cin >> chemMarks;
+    
     total = mathMarks + phyMarks + chemMarks;
+    
     mathPhyTotal = mathMarks + phyMarks;
+    
     if (total >= 190 || mathPhyTotal >= 140)
 
     {

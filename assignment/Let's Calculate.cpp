@@ -24,6 +24,7 @@ int main()
         }
         sum += number;
     }
+    
     cout << "The sum is: " << sum << endl;
     cout << "Max Value is: " << maxValue << endl;
     cout << "Min value is: " << minValue << endl;

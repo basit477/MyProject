@@ -16,6 +16,7 @@ int main()
     {
         cout << "Enter Credit hours for course Num " << courseNumber << " : " << endl;
         cin >> creditHour;
+        
         cout << "Enter Grade for course Num " << courseNumber << " : " << endl;
         cin >> grade;
 
@@ -63,8 +64,11 @@ int main()
         {
             gradePoints = 0.00;
         }
+        
         qualityPoints = creditHour * gradePoints;
+        
         totalCreditHours += creditHour;
+        
         totalQualityPoints += qualityPoints;
 
         courseNumber++;
