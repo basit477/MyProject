@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    double maxValue, minValue = -99, sum, number = 0;
+    double maxValue = 0, minValue = 0, sum = 0, number = 0;
     while (number != -99)
 
     {
@@ -10,21 +10,20 @@ int main()
         cin >> number;
 
         if (number == -99)
-        {
+        {	
             break;
         }
 
-        else if (minValue == -99 || number < minValue)
+        else if (minValue == 0 || number < minValue)
         {
             minValue = number;
         }
-        else if (number > maxValue)
+        else if (maxValue == 0 ||number > maxValue)
         {
             maxValue = number;
         }
         sum += number;
     }
-    
     cout << "The sum is: " << sum << endl;
     cout << "Max Value is: " << maxValue << endl;
     cout << "Min value is: " << minValue << endl;
